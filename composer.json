@@ -1,0 +1,19 @@
+{
+    "name": "hirossyi73/db-json-common",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Hiroshi Sato",
+            "email": "contact@hirossyi.net"
+        }
+    ],
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Hirossyi73\\DbJsonCommon\\DbJsonCommonServiceProvider"
+            ]
+        }
+    }
+}

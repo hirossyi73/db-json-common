@@ -46,7 +46,7 @@ trait DbJsonTraits
     /**
      * get value from json
      */
-    protected function getJson(...$parameters)
+    public function getJson(...$parameters)
     {
         list($dbcolumnname, $key, $default) = $parameters + [null, null, null];
         $json = $this->{$dbcolumnname};
@@ -58,7 +58,7 @@ trait DbJsonTraits
      * set value from json
      * 
      */
-    protected function setJson(...$parameters){
+    public function setJson(...$parameters){
         list($dbcolumnname, $key, $val, $forgetIfNull) = $parameters + [null, null, null, null];
         if (!isset($dbcolumnname) && !isset($key)) {
             return $this;
@@ -90,7 +90,7 @@ trait DbJsonTraits
      * forget value from json
      * 
      */
-    protected function forgetJson(...$parameters){
+    public function forgetJson(...$parameters){
         list($dbcolumnname, $key) = $parameters + [null, null];
         if (!isset($dbcolumnname) && !isset($key)) {
             return $this;
@@ -109,7 +109,7 @@ trait DbJsonTraits
      * clear value from json
      * 
      */
-    protected function clearJson(...$parameters){
+    public function clearJson(...$parameters){
         list($dbcolumnname, $isNull) = $parameters + [null, true];
         if (!isset($dbcolumnname)) {
             return $this;

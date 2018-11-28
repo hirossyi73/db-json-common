@@ -8,7 +8,11 @@
             "email": "contact@hirossyi.net"
         }
     ],
-    "require": {},
+    "require": {
+        "php": ">=7.0.0",
+        "encore/laravel-admin": "1.6.7",
+        "laravel/framework": "~5.5"
+    },
     "extra": {
         "laravel": {
             "providers": [
